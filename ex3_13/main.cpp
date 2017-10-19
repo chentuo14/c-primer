@@ -9,8 +9,8 @@ int main()
     vector<int> v3(10, 42);             //10, 都是42
     vector<int> v4{10};                 //1个，10
     vector<int> v5{10, 42};             //2个，10、42
-    vector<string> v6{10};              //1个，10
-    vector<string> v7{10, "hi"};        //2个，10、hi
+    vector<string> v6{10};              //10个，10个空
+    vector<string> v7{10, "hi"};        //10个，10个hi
 
     return 0;
 }
