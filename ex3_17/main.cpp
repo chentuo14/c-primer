@@ -26,7 +26,7 @@ int main()
 
     for(int i = 0;i<arryStr.size();i++)         //输出
     {
-        cout<<arryStr[i];
+        cout<<arryStr[i]<<endl;
     }
 
     return 0;
