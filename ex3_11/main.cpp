@@ -4,6 +4,7 @@ using namespace std;
 
 int main()
 {
-    cout << "Hello World!" << endl;
+    const string s = "Keep out!";
+    for(auto &c : s) { /**/ }
     return 0;
 }
