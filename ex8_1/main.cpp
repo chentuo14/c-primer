@@ -15,4 +15,3 @@ int main()
     function(cin);
     return 0;
 }
-
