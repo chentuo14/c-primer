@@ -6,9 +6,9 @@ using namespace std;
 
 int main(int argc, char **argv)
 {
-    std::ifstream inpu(argv[1]);
+    std::ifstream input(argv[1]);
     Sales_data total;
-    if(read(inpu, total)) {
+    if(read(input, total)) {
         Sales_data trans;
         while(read(input, trans)) {
             if(total.isbn() == trans.isbn())
