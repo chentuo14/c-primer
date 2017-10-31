@@ -11,7 +11,8 @@ int main()
     vector<int> vec4 = vec2;                    //vec4和vec2一样
     vector<int> vec5 = {3,2,1};                 //vec5创建了三个元素3,2,1
     vector<int> vec6(vec5.begin(), vec5.end());     //vec6从vec5开始到vec5结束，3,2,1
-
+    vector<int> vec7(7);                        //创建7个int的空间
+    vector<int> vec8(8,1);                      //创建8个为1的int类型
 
     return 0;
 }
