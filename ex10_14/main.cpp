@@ -4,6 +4,6 @@ using namespace std;
 
 int main()
 {
-    cout << "Hello World!" << endl;
+//  [](const int a, const int b) { return a+b;}
     return 0;
 }
