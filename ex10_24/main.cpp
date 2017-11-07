@@ -8,7 +8,7 @@ using namespace std::placeholders;
 
 string make_plural(size_t ctr,const string &word, const string &ending)
 {
-  return (ctr==1) ? word : word+ending;
+    return (ctr==1) ? word : word+ending;
 }
 
 bool check_size(const string &s, string::size_type sz)
