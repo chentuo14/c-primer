@@ -18,7 +18,8 @@ int main(int argc, char *argv[])
     string s;
     int v;
     while(in>>s && in>>v)
-        data.push_back(pair<string, int>(s, v));
+        data.push_back(pair<string, int>(s, v));        //data.push_back({s,v});
+                                                        //data.push_back(make_pair(s,v));
 
     for(const auto &d : data)
         cout<<d.first<<" "<<d.second<<endl;
