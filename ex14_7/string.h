@@ -1,5 +1,5 @@
-#ifndef STRVEC_H
-#define STRVEC_H
+#ifndef STRING_H
+#define STRING_H
 
 #include <string>
 #include <algorithm>
@@ -13,6 +13,7 @@ public:
     String(const char* s);
     String(const String &);
     String &operator =(const String &);
+    friend ostream &operator <<(ostream &os, const String &s);
     ~String() { free(); }
     void free();
 
@@ -31,6 +32,12 @@ String::String(const char *s) {
         ++s1;
     }
     alloc_n_copy(s, s1);
+}
+
+ostream &operator <<(ostream &os, const String &s)
+{
+   cout<<*s.elements;
+   return os;
 }
 
 void String::free() {
@@ -52,6 +59,8 @@ void String::range_initializer(const char *c, const char *d)
     end = p.second;
 }
 
-#endif // STRVEC_H
+#endif // STRING_H
+
+
 
 
